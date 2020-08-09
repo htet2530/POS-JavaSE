@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jdc.views.ItemEdit">
+   <styleClass>
+      <String fx:value="wid-480" />
+      <String fx:value="primary" />
+      <String fx:value="pad-40" />
+      <String fx:value="sp-10" />
+   </styleClass>
+   <children>
+      <VBox styleClass="sp-10">
+         <children>
+            <HBox>
+               <children>
+                  <SVGPath content="M14.5 21.187v-11.188h-5v11.188c0 0.547 0.453 0.812 1 0.812h3c0.547 0 1-0.266 1-0.812zM7.375 8h3.047l-1.969-2.516c-0.172-0.203-0.547-0.484-1.078-0.484-0.828 0-1.5 0.672-1.5 1.5s0.672 1.5 1.5 1.5zM18.125 6.5c0-0.828-0.672-1.5-1.5-1.5-0.531 0-0.906 0.281-1.078 0.484l-1.953 2.516h3.031c0.828 0 1.5-0.672 1.5-1.5zM24 10.5v5c0 0.281-0.219 0.5-0.5 0.5h-1.5v6.5c0 0.828-0.672 1.5-1.5 1.5h-17c-0.828 0-1.5-0.672-1.5-1.5v-6.5h-1.5c-0.281 0-0.5-0.219-0.5-0.5v-5c0-0.281 0.219-0.5 0.5-0.5h6.875c-1.937 0-3.5-1.563-3.5-3.5s1.563-3.5 3.5-3.5c1.047 0 2.016 0.438 2.625 1.203l2 2.578 2-2.578c0.609-0.766 1.578-1.203 2.625-1.203 1.937 0 3.5 1.563 3.5 3.5s-1.563 3.5-3.5 3.5h6.875c0.281 0 0.5 0.219 0.5 0.5zM14.5 21.187v-11.188h-5v11.188c0 0.547 0.453 0.812 1 0.812h3c0.547 0 1-0.266 1-0.812zM7.375 8h3.047l-1.969-2.516c-0.172-0.203-0.547-0.484-1.078-0.484-0.828 0-1.5 0.672-1.5 1.5s0.672 1.5 1.5 1.5zM18.125 6.5c0-0.828-0.672-1.5-1.5-1.5-0.531 0-0.906 0.281-1.078 0.484l-1.953 2.516h3.031c0.828 0 1.5-0.672 1.5-1.5zM24 10.5v5c0 0.281-0.219 0.5-0.5 0.5h-1.5v6.5c0 0.828-0.672 1.5-1.5 1.5h-17c-0.828 0-1.5-0.672-1.5-1.5v-6.5h-1.5c-0.281 0-0.5-0.219-0.5-0.5v-5c0-0.281 0.219-0.5 0.5-0.5h6.875c-1.937 0-3.5-1.563-3.5-3.5s1.563-3.5 3.5-3.5c1.047 0 2.016 0.438 2.625 1.203l2 2.578 2-2.578c0.609-0.766 1.578-1.203 2.625-1.203 1.937 0 3.5 1.563 3.5 3.5s-1.563 3.5-3.5 3.5h6.875c0.281 0 0.5 0.219 0.5 0.5zM14.5 21.187v-11.188h-5v11.188c0 0.547 0.453 0.812 1 0.812h3c0.547 0 1-0.266 1-0.812zM7.375 8h3.047l-1.969-2.516c-0.172-0.203-0.547-0.484-1.078-0.484-0.828 0-1.5 0.672-1.5 1.5s0.672 1.5 1.5 1.5zM18.125 6.5c0-0.828-0.672-1.5-1.5-1.5-0.531 0-0.906 0.281-1.078 0.484l-1.953 2.516h3.031c0.828 0 1.5-0.672 1.5-1.5zM24 10.5v5c0 0.281-0.219 0.5-0.5 0.5h-1.5v6.5c0 0.828-0.672 1.5-1.5 1.5h-17c-0.828 0-1.5-0.672-1.5-1.5v-6.5h-1.5c-0.281 0-0.5-0.219-0.5-0.5v-5c0-0.281 0.219-0.5 0.5-0.5h6.875c-1.937 0-3.5-1.563-3.5-3.5s1.563-3.5 3.5-3.5c1.047 0 2.016 0.438 2.625 1.203l2 2.578 2-2.578c0.609-0.766 1.578-1.203 2.625-1.203 1.937 0 3.5 1.563 3.5 3.5s-1.563 3.5-3.5 3.5h6.875c0.281 0 0.5 0.219 0.5 0.5zM14.5 21.187v-11.188h-5v11.188c0 0.547 0.453 0.812 1 0.812h3c0.547 0 1-0.266 1-0.812zM7.375 8h3.047l-1.969-2.516c-0.172-0.203-0.547-0.484-1.078-0.484-0.828 0-1.5 0.672-1.5 1.5s0.672 1.5 1.5 1.5zM18.125 6.5c0-0.828-0.672-1.5-1.5-1.5-0.531 0-0.906 0.281-1.078 0.484l-1.953 2.516h3.031c0.828 0 1.5-0.672 1.5-1.5zM24 10.5v5c0 0.281-0.219 0.5-0.5 0.5h-1.5v6.5c0 0.828-0.672 1.5-1.5 1.5h-17c-0.828 0-1.5-0.672-1.5-1.5v-6.5h-1.5c-0.281 0-0.5-0.219-0.5-0.5v-5c0-0.281 0.219-0.5 0.5-0.5h6.875c-1.937 0-3.5-1.563-3.5-3.5s1.563-3.5 3.5-3.5c1.047 0 2.016 0.438 2.625 1.203l2 2.578 2-2.578c0.609-0.766 1.578-1.203 2.625-1.203 1.937 0 3.5 1.563 3.5 3.5s-1.563 3.5-3.5 3.5h6.875c0.281 0 0.5 0.219 0.5 0.5z" styleClass="white-text" />
+                  <Label text="Add New Item">
+                     <styleClass>
+                        <String fx:value="white-text" />
+                        <String fx:value="fs-20" />
+                     </styleClass>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="al-center-left" />
+                  <String fx:value="sp-10" />
+               </styleClass>
+            </HBox>
+            <Label fx:id="message" styleClass="white-text" />
+         </children>
+      </VBox>
+      <VBox styleClass="sp-5">
+         <children>
+            <Label styleClass="white-text" text="Category" />
+            <ComboBox fx:id="category" prefWidth="150.0" promptText="Select Category">
+               <styleClass>
+                  <String fx:value="wid-480" />
+                  <String fx:value="input-height" />
+               </styleClass>
+            </ComboBox>
+         </children>
+      </VBox>
+      <VBox styleClass="sp-5">
+         <children>
+            <Label styleClass="white-text" text="Item Name" />
+            <TextField fx:id="name" promptText="Enter Item Name" styleClass="input-height" />
+         </children>
+      </VBox>
+      <VBox layoutX="50.0" layoutY="182.0" styleClass="sp-5">
+         <children>
+            <Label styleClass="white-text" text="Unit Price" />
+            <TextField fx:id="price" promptText="Enter Uniit Price" styleClass="input-height" />
+         </children>
+      </VBox>
+      <VBox layoutX="50.0" layoutY="250.0" styleClass="sp-5">
+         <children>
+            <Label styleClass="white-text" text="Remark" />
+            <TextArea fx:id="remark" prefHeight="60.0" promptText="Write Remark for this item" />
+         </children>
+      </VBox>
+      <HBox>
+         <children>
+            <Button mnemonicParsing="false" onAction="#save" text="SAVE">
+               <styleClass>
+                  <String fx:value="secondary" />
+                  <String fx:value="white-text" />
+                  <String fx:value="input-height" />
+                  <String fx:value="wid-300" />
+               </styleClass>
+               <graphic>
+                  <SVGPath content="M26.109 8.844c0 0.391-0.156 0.781-0.438 1.062l-13.438 13.438c-0.281 0.281-0.672 0.438-1.062 0.438s-0.781-0.156-1.062-0.438l-7.781-7.781c-0.281-0.281-0.438-0.672-0.438-1.062s0.156-0.781 0.438-1.062l2.125-2.125c0.281-0.281 0.672-0.438 1.062-0.438s0.781 0.156 1.062 0.438l4.594 4.609 10.25-10.266c0.281-0.281 0.672-0.438 1.062-0.438s0.781 0.156 1.062 0.438l2.125 2.125c0.281 0.281 0.438 0.672 0.438 1.062zM26.109 8.844c0 0.391-0.156 0.781-0.438 1.062l-13.438 13.438c-0.281 0.281-0.672 0.438-1.062 0.438s-0.781-0.156-1.062-0.438l-7.781-7.781c-0.281-0.281-0.438-0.672-0.438-1.062s0.156-0.781 0.438-1.062l2.125-2.125c0.281-0.281 0.672-0.438 1.062-0.438s0.781 0.156 1.062 0.438l4.594 4.609 10.25-10.266c0.281-0.281 0.672-0.438 1.062-0.438s0.781 0.156 1.062 0.438l2.125 2.125c0.281 0.281 0.438 0.672 0.438 1.062z" styleClass="white-text" />
+               </graphic>
+            </Button>
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#close" text="CLOSE">
+               <styleClass>
+                  <String fx:value="secondary" />
+                  <String fx:value="white-text" />
+                  <String fx:value="wid-300" />
+                  <String fx:value="input-height" />
+               </styleClass>
+               <graphic>
+                  <SVGPath content="M20.281 20.656c0 0.391-0.156 0.781-0.438 1.062l-2.125 2.125c-0.281 0.281-0.672 0.438-1.062 0.438s-0.781-0.156-1.062-0.438l-4.594-4.594-4.594 4.594c-0.281 0.281-0.672 0.438-1.062 0.438s-0.781-0.156-1.062-0.438l-2.125-2.125c-0.281-0.281-0.438-0.672-0.438-1.062s0.156-0.781 0.438-1.062l4.594-4.594-4.594-4.594c-0.281-0.281-0.438-0.672-0.438-1.062s0.156-0.781 0.438-1.062l2.125-2.125c0.281-0.281 0.672-0.438 1.062-0.438s0.781 0.156 1.062 0.438l4.594 4.594 4.594-4.594c0.281-0.281 0.672-0.438 1.062-0.438s0.781 0.156 1.062 0.438l2.125 2.125c0.281 0.281 0.438 0.672 0.438 1.062s-0.156 0.781-0.438 1.062l-4.594 4.594 4.594 4.594c0.281 0.281 0.438 0.672 0.438 1.062zM20.281 20.656c0 0.391-0.156 0.781-0.438 1.062l-2.125 2.125c-0.281 0.281-0.672 0.438-1.062 0.438s-0.781-0.156-1.062-0.438l-4.594-4.594-4.594 4.594c-0.281 0.281-0.672 0.438-1.062 0.438s-0.781-0.156-1.062-0.438l-2.125-2.125c-0.281-0.281-0.438-0.672-0.438-1.062s0.156-0.781 0.438-1.062l4.594-4.594-4.594-4.594c-0.281-0.281-0.438-0.672-0.438-1.062s0.156-0.781 0.438-1.062l2.125-2.125c0.281-0.281 0.672-0.438 1.062-0.438s0.781 0.156 1.062 0.438l4.594 4.594 4.594-4.594c0.281-0.281 0.672-0.438 1.062-0.438s0.781 0.156 1.062 0.438l2.125 2.125c0.281 0.281 0.438 0.672 0.438 1.062s-0.156 0.781-0.438 1.062l-4.594 4.594 4.594 4.594c0.281 0.281 0.438 0.672 0.438 1.062z" styleClass="white-text" />
+               </graphic>
+            </Button>
+         </children>
+         <styleClass>
+            <String fx:value="sp-10" />
+            <String fx:value="pad-top-20" />
+         </styleClass>
+      </HBox>
+   </children>
+</VBox>

@@ -1,0 +1,133 @@
+.main-frame {
+	-fx-pref-width: 980px;
+	-fx-pref-height: 780px;
+}
+
+.menu-btn {
+	-fx-pref-width: 120px;
+	-fx-pref-height: 60px;
+	-fx-alignment: center ;
+}
+
+.content-view {
+	-fx-pref-width: 980px;
+	-fx-pref-height: 630px;
+}
+
+.header-height {
+	-fx-pref-height: 56.5px;
+}
+
+.wid-200 {
+	-fx-pref-width: 200px;
+}
+
+.wid-300 {
+	-fx-pref-width: 300px;
+}
+
+.wid-480 {
+	-fx-pref-width: 480px;
+}
+
+.input-height {
+	-fx-pref-height: 36.5px;
+}
+
+.btn-height {
+	-fx-pref-height: 71px;
+}
+
+.fs-16 {
+	-fx-font-size: 16px;
+}
+
+.fs-18 {
+	-fx-font-size: 18px;
+}
+
+.fs-20 {
+	-fx-font-size: 20px;
+}
+
+.fs-24 {
+	-fx-font-size: 24px;
+}
+
+.pad-10 {
+	-fx-padding: 10 10 10 10;
+}
+
+.pad-tb10 {
+	-fx-padding: 0 10 10 10;
+}
+
+.pad-40 {
+	-fx-padding: 40 40 40 40;
+}
+
+.pad-top-20 {
+	-fx-padding: 20 0.0 0.0 0.0;
+}
+
+.pad-20 {
+	-fx-padding: 20 20 20 20;
+}
+
+.primary {
+	-fx-background-color: #3C3F54;
+}
+
+.secondary {
+	-fx-background-color: #262A41;
+}
+
+.acent {
+	-fx-background-color: #EDEDEF;
+}
+
+.white-text {
+	-fx-text-fill: white;
+	-fx-fill: white;
+}
+
+.black-text {
+	-fx-text-fill: black;
+	-fx-fill: black;
+}
+
+Button {
+	-fx-cursor: hand;
+}
+
+.sp-5 {
+	-fx-spacing: 5;
+}
+
+.sp-10 {
+	-fx-spacing: 10;
+}
+
+.sp-20 {
+	-fx-spacing: 20;
+}
+
+.al-buttom {
+	-fx-alignment: bottom-center;
+}
+
+.al-center {
+	-fx-alignment: center;
+}
+
+.al-center-left  {
+	-fx-alignment: center-left;
+}
+
+.al-center-right {
+	-fx-alignment: center-right;
+}
+
+.padding-left-5{
+	-fx-padding: 0 0 0 5;
+}

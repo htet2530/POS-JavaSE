@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+
+<VBox stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jdc.views.CategoryManagement">
+   <children>
+      <HBox styleClass="al-center-right">
+         <children>
+            <Button mnemonicParsing="false" onAction="#addNew" text="ADD NEW">
+               <graphic>
+                  <SVGPath content="M22 11.5v3c0 0.828-0.672 1.5-1.5 1.5h-6.5v6.5c0 0.828-0.672 1.5-1.5 1.5h-3c-0.828 0-1.5-0.672-1.5-1.5v-6.5h-6.5c-0.828 0-1.5-0.672-1.5-1.5v-3c0-0.828 0.672-1.5 1.5-1.5h6.5v-6.5c0-0.828 0.672-1.5 1.5-1.5h3c0.828 0 1.5 0.672 1.5 1.5v6.5h6.5c0.828 0 1.5 0.672 1.5 1.5zM22 11.5v3c0 0.828-0.672 1.5-1.5 1.5h-6.5v6.5c0 0.828-0.672 1.5-1.5 1.5h-3c-0.828 0-1.5-0.672-1.5-1.5v-6.5h-6.5c-0.828 0-1.5-0.672-1.5-1.5v-3c0-0.828 0.672-1.5 1.5-1.5h6.5v-6.5c0-0.828 0.672-1.5 1.5-1.5h3c0.828 0 1.5 0.672 1.5 1.5v6.5h6.5c0.828 0 1.5 0.672 1.5 1.5z" styleClass="white-text" />
+               </graphic>
+               <styleClass>
+                  <String fx:value="secondary" />
+                  <String fx:value="white-text" />
+                  <String fx:value="input-height" />
+               </styleClass>
+            </Button>
+         </children>
+      </HBox>
+      <TilePane fx:id="items" hgap="15.0" tileAlignment="TOP_CENTER" vgap="20.0" VBox.vgrow="ALWAYS" />
+   </children>
+   <styleClass>
+      <String fx:value="content-view" />
+      <String fx:value="pad-20" />
+      <String fx:value="sp-10" />
+   </styleClass>
+</VBox>

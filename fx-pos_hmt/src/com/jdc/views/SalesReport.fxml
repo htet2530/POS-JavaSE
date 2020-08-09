@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+
+<VBox stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jdc.views.SalesReport">
+	<styleClass>
+		<String fx:value="content-view" />
+		<String fx:value="pad-10" />
+		<String fx:value="sp-10" />
+	</styleClass>
+	<children>
+      <HBox>
+         <children>
+            <HBox>
+               <children>
+                  <Label text="Category" HBox.hgrow="ALWAYS" />
+                  <ComboBox fx:id="category" prefWidth="120.0" promptText="Choose:" styleClass="input-height" />
+               </children>
+               <styleClass>
+                  <String fx:value="al-center-left" />
+                  <String fx:value="sp-5" />
+               </styleClass>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0">
+               <children>
+                  <Label text="Item" HBox.hgrow="ALWAYS" />
+                  <TextField fx:id="item" prefWidth="130.0" promptText="Item Name" styleClass="input-height" />
+               </children>
+               <styleClass>
+                  <String fx:value="al-center-left" />
+                  <String fx:value="sp-5" />
+               </styleClass>
+            </HBox>
+            <HBox layoutX="232.0" layoutY="10.0">
+               <children>
+                  <Label text="Date From" HBox.hgrow="ALWAYS" />
+                  <DatePicker fx:id="from" prefWidth="130.0" promptText="Start Date:" styleClass="input-height" />
+               </children>
+               <styleClass>
+                  <String fx:value="al-center-left" />
+                  <String fx:value="sp-5" />
+               </styleClass>
+            </HBox>
+            <HBox layoutX="441.0" layoutY="10.0">
+               <children>
+                  <Label text="Date To" />
+                  <DatePicker fx:id="to" prefWidth="130.0" promptText="End Date:" styleClass="input-height" />
+               </children>
+               <styleClass>
+                  <String fx:value="al-center-left" />
+                  <String fx:value="sp-5" />
+               </styleClass>
+            </HBox>
+            <Button mnemonicParsing="false" onAction="#search" text="SEARCH">
+               <graphic>
+                  <SVGPath content="M18 13c0-3.859-3.141-7-7-7s-7 3.141-7 7 3.141 7 7 7 7-3.141 7-7zM26 26c0 1.094-0.906 2-2 2-0.531 0-1.047-0.219-1.406-0.594l-5.359-5.344c-1.828 1.266-4.016 1.937-6.234 1.937-6.078 0-11-4.922-11-11s4.922-11 11-11 11 4.922 11 11c0 2.219-0.672 4.406-1.937 6.234l5.359 5.359c0.359 0.359 0.578 0.875 0.578 1.406zM18 13c0-3.859-3.141-7-7-7s-7 3.141-7 7 3.141 7 7 7 7-3.141 7-7zM26 26c0 1.094-0.906 2-2 2-0.531 0-1.047-0.219-1.406-0.594l-5.359-5.344c-1.828 1.266-4.016 1.937-6.234 1.937-6.078 0-11-4.922-11-11s4.922-11 11-11 11 4.922 11 11c0 2.219-0.672 4.406-1.937 6.234l5.359 5.359c0.359 0.359 0.578 0.875 0.578 1.406z" styleClass="white-text" />
+               </graphic>
+               <styleClass>
+                  <String fx:value="secondary" />
+                  <String fx:value="white-text" />
+                  <String fx:value="input-height" />
+               </styleClass>
+            </Button>
+            <Button layoutX="971.0" layoutY="10.0" mnemonicParsing="false" onAction="#clear" text="CLEAR">
+               <graphic>
+                  <SVGPath content="M20 23.5c0 0.266-0.234 0.5-0.5 0.5h-15c-0.578 0-0.5-0.609-0.5-1v-9h-3c-0.547 0-1-0.453-1-1 0-0.234 0.078-0.469 0.234-0.641l5-6c0.187-0.219 0.469-0.344 0.766-0.344s0.578 0.125 0.766 0.344l5 6c0.156 0.172 0.234 0.406 0.234 0.641 0 0.547-0.453 1-1 1h-3v6h9c0.141 0 0.297 0.063 0.391 0.172l2.5 3c0.063 0.094 0.109 0.219 0.109 0.328zM30 17c0 0.234-0.078 0.469-0.234 0.641l-5 6c-0.187 0.219-0.469 0.359-0.766 0.359s-0.578-0.141-0.766-0.359l-5-6c-0.156-0.172-0.234-0.406-0.234-0.641 0-0.547 0.453-1 1-1h3v-6h-9c-0.141 0-0.297-0.063-0.391-0.187l-2.5-3c-0.063-0.078-0.109-0.203-0.109-0.313 0-0.266 0.234-0.5 0.5-0.5h15c0.578 0 0.5 0.609 0.5 1v9h3c0.547 0 1 0.453 1 1zM20 23.5c0 0.266-0.234 0.5-0.5 0.5h-15c-0.578 0-0.5-0.609-0.5-1v-9h-3c-0.547 0-1-0.453-1-1 0-0.234 0.078-0.469 0.234-0.641l5-6c0.187-0.219 0.469-0.344 0.766-0.344s0.578 0.125 0.766 0.344l5 6c0.156 0.172 0.234 0.406 0.234 0.641 0 0.547-0.453 1-1 1h-3v6h9c0.141 0 0.297 0.063 0.391 0.172l2.5 3c0.063 0.094 0.109 0.219 0.109 0.328zM30 17c0 0.234-0.078 0.469-0.234 0.641l-5 6c-0.187 0.219-0.469 0.359-0.766 0.359s-0.578-0.141-0.766-0.359l-5-6c-0.156-0.172-0.234-0.406-0.234-0.641 0-0.547 0.453-1 1-1h3v-6h-9c-0.141 0-0.297-0.063-0.391-0.187l-2.5-3c-0.063-0.078-0.109-0.203-0.109-0.313 0-0.266 0.234-0.5 0.5-0.5h15c0.578 0 0.5 0.609 0.5 1v9h3c0.547 0 1 0.453 1 1z" styleClass="white-text" />
+               </graphic>
+               <styleClass>
+                  <String fx:value="secondary" />
+                  <String fx:value="white-text" />
+                  <String fx:value="input-height" />
+               </styleClass>
+            </Button>
+         </children>
+         <styleClass>
+            <String fx:value="al-center-left" />
+            <String fx:value="sp-10" />
+         </styleClass>
+      </HBox>
+		<TableView fx:id="table" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+			<columns>
+				<TableColumn maxWidth="75.0" prefWidth="70.0" styleClass="al-center" text="ID">
+					<cellValueFactory>
+						<PropertyValueFactory property="id" />
+					</cellValueFactory>
+				</TableColumn>
+				<TableColumn maxWidth="130.0" prefWidth="125.0" text="Sale Date">
+					<cellValueFactory>
+						<PropertyValueFactory property="saleDate" />
+					</cellValueFactory>
+				</TableColumn>
+				<TableColumn maxWidth="90.0" prefWidth="90.0" text="Time">
+					<cellValueFactory>
+						<PropertyValueFactory property="saleTime" />
+					</cellValueFactory>
+				</TableColumn>
+				<TableColumn maxWidth="130.0" prefWidth="130.0" text="Category">
+					<cellValueFactory>
+						<PropertyValueFactory property="category" />
+					</cellValueFactory>
+				</TableColumn>
+				<TableColumn maxWidth="170.0" prefWidth="170.0" text="Item">
+					<cellValueFactory>
+						<PropertyValueFactory property="itemName" />
+					</cellValueFactory>
+				</TableColumn>
+				<TableColumn maxWidth="100.0" prefWidth="100.0" styleClass="al-center-right" text="Unit Price">
+					<cellValueFactory>
+						<PropertyValueFactory property="unitPrice" />
+					</cellValueFactory>
+				</TableColumn>
+				<TableColumn maxWidth="70.0" prefWidth="70.0" styleClass="al-center-right" text="Quantity">
+					<cellValueFactory>
+						<PropertyValueFactory property="quantity" />
+					</cellValueFactory>
+				</TableColumn>
+				<TableColumn maxWidth="100.0" prefWidth="100.0" styleClass="al-center-right" text="Sub Total">
+					<cellValueFactory>
+						<PropertyValueFactory property="subTotal" />
+					</cellValueFactory>
+				</TableColumn>
+				<TableColumn maxWidth="100.0" prefWidth="100.0" styleClass="al-center-right" text="Tax">
+					<cellValueFactory>
+						<PropertyValueFactory property="tax" />
+					</cellValueFactory>
+				</TableColumn>
+				<TableColumn prefWidth="139.0" styleClass="al-center-right" text="Total">
+					<cellValueFactory>
+						<PropertyValueFactory property="total" />
+					</cellValueFactory>
+				</TableColumn>
+			</columns>
+		</TableView>
+      <HBox maxHeight="37.0" minHeight="37.0" prefHeight="37.0" styleClass="al-center-right">
+         <children>
+            <HBox>
+               <children>
+                  <HBox prefHeight="37.0" prefWidth="132.0">
+                     <children>
+                        <Label fx:id="subTotal" text="0" />
+                     </children>
+                     <styleClass>
+                        <String fx:value="pad-10" />
+                        <String fx:value="acent" />
+                        <String fx:value="al-center-right" />
+                     </styleClass>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="37.0" prefWidth="108.0">
+                     <children>
+                        <Label fx:id="tax" styleClass="white-text" text="0" />
+                     </children>
+                     <styleClass>
+                        <String fx:value="pad-10" />
+                        <String fx:value="primary" />
+                        <String fx:value="al-center-right" />
+                     </styleClass>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="37.0" prefWidth="139.0">
+                     <children>
+                        <Label fx:id="total" styleClass="white-text" text="0" />
+                     </children>
+                     <styleClass>
+                        <String fx:value="pad-10" />
+                        <String fx:value="secondary" />
+                        <String fx:value="al-center-right" />
+                     </styleClass>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+	</children>
+</VBox>

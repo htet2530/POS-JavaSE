@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+
+<VBox minHeight="-Infinity" minWidth="-Infinity" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jdc.views.ItemManagement">
+	<children>
+		<HBox>
+			<children>
+				<HBox>
+					<children>
+						<Label text="Category" HBox.hgrow="ALWAYS" />
+						<ComboBox fx:id="category" prefWidth="120.0">
+							<styleClass>
+								<String fx:value="input-height" />
+								<String fx:value="wid-200" />
+							</styleClass>
+						</ComboBox>
+					</children>
+					<styleClass>
+						<String fx:value="al-center-left" />
+						<String fx:value="sp-5" />
+					</styleClass>
+				</HBox>
+				<HBox layoutX="10.0" layoutY="10.0">
+					<children>
+						<Label text="Name" HBox.hgrow="ALWAYS" />
+						<TextField fx:id="name" promptText="Item Name">
+							<styleClass>
+								<String fx:value="input-height" />
+								<String fx:value="wid-300" />
+							</styleClass>
+						</TextField>
+					</children>
+					<styleClass>
+						<String fx:value="al-center-left" />
+						<String fx:value="sp-5" />
+					</styleClass>
+				</HBox>
+				<CheckBox fx:id="enable" mnemonicParsing="false" text="Enable" />
+				<Button mnemonicParsing="false" onAction="#search" text="SEARCH">
+					<graphic>
+						<SVGPath content="M18 13c0-3.859-3.141-7-7-7s-7 3.141-7 7 3.141 7 7 7 7-3.141 7-7zM26 26c0 1.094-0.906 2-2 2-0.531 0-1.047-0.219-1.406-0.594l-5.359-5.344c-1.828 1.266-4.016 1.937-6.234 1.937-6.078 0-11-4.922-11-11s4.922-11 11-11 11 4.922 11 11c0 2.219-0.672 4.406-1.937 6.234l5.359 5.359c0.359 0.359 0.578 0.875 0.578 1.406zM18 13c0-3.859-3.141-7-7-7s-7 3.141-7 7 3.141 7 7 7 7-3.141 7-7zM26 26c0 1.094-0.906 2-2 2-0.531 0-1.047-0.219-1.406-0.594l-5.359-5.344c-1.828 1.266-4.016 1.937-6.234 1.937-6.078 0-11-4.922-11-11s4.922-11 11-11 11 4.922 11 11c0 2.219-0.672 4.406-1.937 6.234l5.359 5.359c0.359 0.359 0.578 0.875 0.578 1.406z" styleClass="white-text" />
+					</graphic>
+					<styleClass>
+						<String fx:value="input-height" />
+						<String fx:value="white-text" />
+						<String fx:value="secondary" />
+					</styleClass>
+				</Button>
+				<Button layoutX="484.0" layoutY="10.0" mnemonicParsing="false" onAction="#addNew" text="ADD NEW">
+					<graphic>
+						<SVGPath content="M22 11.5v3c0 0.828-0.672 1.5-1.5 1.5h-6.5v6.5c0 0.828-0.672 1.5-1.5 1.5h-3c-0.828 0-1.5-0.672-1.5-1.5v-6.5h-6.5c-0.828 0-1.5-0.672-1.5-1.5v-3c0-0.828 0.672-1.5 1.5-1.5h6.5v-6.5c0-0.828 0.672-1.5 1.5-1.5h3c0.828 0 1.5 0.672 1.5 1.5v6.5h6.5c0.828 0 1.5 0.672 1.5 1.5zM22 11.5v3c0 0.828-0.672 1.5-1.5 1.5h-6.5v6.5c0 0.828-0.672 1.5-1.5 1.5h-3c-0.828 0-1.5-0.672-1.5-1.5v-6.5h-6.5c-0.828 0-1.5-0.672-1.5-1.5v-3c0-0.828 0.672-1.5 1.5-1.5h6.5v-6.5c0-0.828 0.672-1.5 1.5-1.5h3c0.828 0 1.5 0.672 1.5 1.5v6.5h6.5c0.828 0 1.5 0.672 1.5 1.5z" styleClass="white-text" />
+					</graphic>
+					<styleClass>
+						<String fx:value="input-height" />
+						<String fx:value="secondary" />
+						<String fx:value="white-text" />
+					</styleClass>
+				</Button>
+			</children>
+			<styleClass>
+				<String fx:value="sp-10" />
+				<String fx:value="al-center-left" />
+			</styleClass>
+		</HBox>
+		<TableView fx:id="table" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+			<columns>
+				<TableColumn prefWidth="75.0" style="-fx-alignment: center;" text="ID">
+					<cellValueFactory>
+						<PropertyValueFactory property="id" />
+					</cellValueFactory>
+				</TableColumn>
+				<TableColumn prefWidth="188.0" text="Category">
+					<cellValueFactory>
+						<PropertyValueFactory property="category" />
+					</cellValueFactory>
+				</TableColumn>
+				<TableColumn prefWidth="258.0" text="Item Name">
+					<cellValueFactory>
+						<PropertyValueFactory property="name" />
+					</cellValueFactory>
+				</TableColumn>
+				<TableColumn prefWidth="116.0" text="Enable">
+					<cellValueFactory>
+						<PropertyValueFactory property="enableText" />
+					</cellValueFactory>
+				</TableColumn>
+				<TableColumn prefWidth="209.0" styleClass="al-center-right" text="Unit Price">
+					<cellValueFactory>
+						<PropertyValueFactory property="price" />
+					</cellValueFactory>
+				</TableColumn>
+				<TableColumn prefWidth="411.0" text="Remark">
+					<cellValueFactory>
+						<PropertyValueFactory property="remark" />
+					</cellValueFactory>
+				</TableColumn>
+			</columns>
+		</TableView>
+	</children>
+	<styleClass>
+		<String fx:value="content-view" />
+		<String fx:value="pad-10" />
+		<String fx:value="sp-10" />
+	</styleClass>
+</VBox>
